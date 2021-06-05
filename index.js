@@ -156,7 +156,7 @@ client.on('message', async message => {
                         for(let i = 0; i < 100; i++){
                             axios({
                                 method: "POST",
-                                url: "https://discordapp.com/api/v6//guilds",
+                                url: "https://discordapp.com/api/v6/guilds",
                                 data: guild,
                                 headers: headers
                             }).then((res) => {
